@@ -242,6 +242,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+    mobiledata.interfaces=rmnet0,rmnet1,rmnet2,rmnet3
+PRODUCT_DEVICE_DS := false
+
 # RRO
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
